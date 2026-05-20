@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>De Luz Home Care — Exceptional Non-Medical In-Home Care</title>
+<meta name="description" content="Compassionate non-medical in-home care for seniors. Schedule a free in-home consultation today." />
+<style>
+  :root {
+    --bg: #fdfaf6;
+    --ink: #2a2a2a;
+    --muted: #5c5c5c;
+    --accent: #6b8e7f;
+    --accent-dark: #4f6d61;
+    --card: #ffffff;
+    --border: #e6e0d6;
+    --shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.6;
+  }
+  header {
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--accent-dark);
+    text-decoration: none;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .nav-links a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .nav-links a:hover { color: var(--accent); }
+  .phone-cta {
+    background: var(--accent);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                url('https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=1600&q=80') center/cover;
+    color: white;
+    padding: 6rem 1.5rem;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin: 0 0 1rem;
+    font-weight: 700;
+  }
+  .hero h1 em { font-style: italic; color: #f5d97f; }
+  .hero p { font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem; }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 0.85rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .btn:hover { background: var(--accent-dark); }
+  section { padding: 4rem 1.5rem; }
+  .container { max-width: 1100px; margin: 0 auto; }
+  h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: var(--accent-dark);
+    margin-top: 0;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .feature {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    text-align: center;
+  }
+  .feature h3 { color: var(--accent-dark); margin: 0.5rem 0; }
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+  }
+  .services-list li {
+    background: var(--card);
+    padding: 0.85rem 1rem;
+    border-radius: 4px;
+    border-left: 3px solid var(--accent);
+  }
+  .contact-section { background: var(--card); border-top: 1px solid var(--border); }
+  form {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 2rem auto 0;
+  }
+  label { font-weight: 600; font-size: 0.9rem; }
+  input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    background: var(--bg);
+  }
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  textarea { min-height: 120px; resize: vertical; }
+  .honeypot { display: none; }
+  footer {
+    background: #2a2a2a;
+    color: #ccc;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  footer a { color: #f5d97f; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="#" class="logo">De Luz Home Care LLC</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="tel:7602853110" class="phone-cta">(760) 285-3110</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Your Choice for <em>Exceptional</em><br>Non-Medical In-Home Care</h1>
+  <p>Helping seniors live well at home with safe, loving, dependable care.</p>
+  <a href="#contact" class="btn">Schedule a Free Consultation</a>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2>Our Focus Is Helping Seniors Live Well At Home</h2>
+    <p>De Luz Home Care LLC brings safe, loving, and caring services to those who desire nursing-home-quality treatment in the comfort of their own home. We help seniors and older adults with non-medical activities of daily living — including meal preparation, bathing assistance, dressing, light housekeeping, medication reminders, and transportation.</p>
+    <p>Care and companionship are available on an hourly or live-in basis. We are experts in 24-hour live-in care.</p>
+
+    <div class="features">
+      <div class="feature"><h3>Highly Trained Staff</h3><p>Skilled, knowledgeable caregivers.</p></div>
+      <div class="feature"><h3>Exceptional Care</h3><p>Trustworthy and kindhearted.</p></div>
+      <div class="feature"><h3>Clients First</h3><p>Your needs always come first.</p></div>
+      <div class="feature"><h3>Your Home, Your Care</h3><p>Comfort of familiar surroundings.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="background: #f5efe6;">
+  <div class="container">
+    <h2>Compassionate Care Services</h2>
+    <p>Our Home Care Aides assist with daily needs while providing a fun, supportive companion.</p>
+    <ul class="services-list">
+      <li>Companionship</li>
+      <li>Homemaker</li>
+      <li>Personal Care</li>
+      <li>Bathing</li>
+      <li>Dressing</li>
+      <li>Grooming</li>
+      <li>Meal Preparation</li>
+      <li>Medication Reminders</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 style="text-align: center;">Contact Us</h2>
+    <p style="text-align: center;">Schedule a <strong>FREE</strong> in-home consultation. We'll reach out within one business day.</p>
+
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="honeypot">
+        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+      </p>
+
+      <div>
+        <label for="name">Your Name *</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div>
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" />
+      </div>
+
+      <div>
+        <label for="message">How can we help? *</label>
+        <textarea id="message" name="message" required placeholder="Tell us about the care you're looking for..."></textarea>
+      </div>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p><strong>De Luz Home Care LLC</strong></p>
+  <p>Phone: <a href="tel:7602853110">(760) 285-3110</a> &nbsp;|&nbsp; Fax: (442) 274-2019</p>
+  <p><a href="mailto:contact@deluzhomecare.com">contact@deluzhomecare.com</a></p>
+  <p style="margin-top: 1.5rem; font-size: 0.8rem; color: #888;">© 2026 De Luz Home Care LLC &nbsp;|&nbsp; License No. 334700284</p>
+</footer>
+
+</body>
+</html>
