@@ -10,19 +10,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #fbf6ec;
-    --bg-soft: #f5e8cd;
-    --ink: #2e2226;
-    --muted: #6f5f60;
-    --rose: #c66f8c;
-    --rose-dark: #8a3f5e;
-    --rose-light: #f7dde5;
-    --gold: #efbb2a;
-    --gold-light: #ffd960;
+    --bg: #faf2e3;
+    --bg-soft: #fbe2d1;
+    --ink: #1d1216;
+    --muted: #5a464b;
+    --rose: #b8456b;
+    --rose-dark: #7a2746;
+    --rose-light: #fbd1de;
+    --gold: #d99a18;
+    --gold-light: #f4c14a;
     --card: #ffffff;
-    --border: #ecdcc1;
-    --shadow: 0 6px 24px rgba(138, 63, 94, 0.10);
-    --shadow-lg: 0 14px 44px rgba(138, 63, 94, 0.16);
+    --border: #ead2b8;
+    --shadow: 0 6px 24px rgba(122, 39, 70, 0.12);
+    --shadow-lg: 0 14px 44px rgba(122, 39, 70, 0.18);
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -101,13 +101,13 @@
     font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 0.02em;
-    box-shadow: 0 4px 14px rgba(140, 90, 110, 0.2);
+    box-shadow: 0 4px 14px rgba(122, 39, 70, 0.28);
     transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
   }
   .phone-cta:hover {
     background: var(--rose-dark);
     transform: translateY(-1px);
-    box-shadow: 0 6px 18px rgba(140, 90, 110, 0.3);
+    box-shadow: 0 6px 18px rgba(122, 39, 70, 0.36);
   }
 
   /* Hero */
@@ -117,7 +117,7 @@
     padding: 8rem 1.5rem 7rem;
     text-align: center;
     overflow: hidden;
-    background: #2a1a22;
+    background: #2a141d;
   }
   .hero::before {
     content: "";
@@ -130,7 +130,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(58, 30, 45, 0.65), rgba(138, 63, 94, 0.45));
+    background: linear-gradient(135deg, rgba(40, 16, 26, 0.72), rgba(160, 50, 88, 0.5));
     z-index: 1;
   }
   .hero-content {
@@ -143,7 +143,7 @@
     display: inline-block;
     font-family: "Inter", sans-serif;
     font-size: 0.78rem;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.22em;
     text-transform: uppercase;
     color: var(--rose);
@@ -177,21 +177,21 @@
     border: none;
     cursor: pointer;
     transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-    box-shadow: 0 6px 18px rgba(140, 90, 110, 0.28);
+    box-shadow: 0 6px 18px rgba(122, 39, 70, 0.32);
   }
   .btn:hover {
     background: var(--rose-dark);
     transform: translateY(-1px);
-    box-shadow: 0 8px 22px rgba(140, 90, 110, 0.36);
+    box-shadow: 0 8px 22px rgba(122, 39, 70, 0.4);
   }
   .btn-outline {
     background: transparent;
     color: white;
     box-shadow: none;
-    border: 1.5px solid rgba(255,255,255,0.6);
+    border: 1.5px solid rgba(255,255,255,0.7);
   }
   .btn-outline:hover {
-    background: rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.14);
     border-color: white;
     box-shadow: none;
   }
@@ -281,6 +281,36 @@
     box-shadow: var(--shadow);
     border-left-color: var(--rose);
   }
+  .specialized-care {
+    margin-top: 2rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--rose);
+    border-radius: 14px;
+    padding: 2rem 2.25rem;
+    box-shadow: var(--shadow);
+  }
+  .specialized-eyebrow {
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--rose-dark);
+    margin-bottom: 0.5rem;
+  }
+  .specialized-care h3 {
+    margin: 0 0 0.6rem;
+    font-size: 1.4rem;
+    color: var(--ink);
+  }
+  .specialized-care p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 1rem;
+    max-width: 720px;
+  }
 
   /* Contact */
   .contact-section { background: var(--card); border-top: 1px solid var(--border); }
@@ -339,7 +369,7 @@
   input:focus, textarea:focus {
     outline: none;
     border-color: var(--rose);
-    box-shadow: 0 0 0 3px rgba(184, 134, 155, 0.18);
+    box-shadow: 0 0 0 3px rgba(184, 69, 107, 0.2);
   }
   textarea { min-height: 130px; resize: vertical; }
   .honeypot { display: none; }
@@ -347,8 +377,8 @@
 
   /* Footer */
   footer {
-    background: #3a2530;
-    color: #d8c5cc;
+    background: #3a1f2a;
+    color: #e8d2d8;
     padding: 3.5rem 1.5rem 2rem;
     text-align: center;
     font-size: 0.92rem;
@@ -368,7 +398,7 @@
     margin: 0 0 1.5rem;
     font-size: 1rem;
   }
-  .footer-meta { margin-top: 1.5rem; font-size: 0.8rem; color: rgba(216, 197, 204, 0.6); }
+  .footer-meta { margin-top: 1.5rem; font-size: 0.8rem; color: rgba(232, 210, 216, 0.6); }
   footer a { color: var(--gold-light); text-decoration: none; }
   footer a:hover { color: white; }
 
@@ -427,8 +457,8 @@
     <span class="eyebrow">About Us</span>
     <h2>Our Focus Is Helping Seniors Live Well At Home</h2>
     <div class="divider"></div>
-    <p class="lead">De Luz Home Care LLC brings safe, loving, and caring services to those who desire nursing-home-quality treatment in the comfort of their own home. We help seniors and older adults with non-medical activities of daily living — including meal preparation, bathing assistance, dressing, light housekeeping, medication reminders, and transportation.</p>
-    <p>Care and companionship are available on an hourly or live-in basis. We are experts in 24-hour live-in care.</p>
+    <p class="lead">De Luz Home Care LLC brings safe, loving, and caring services to those who desire nursing-home-quality treatment in the comfort of their own home. We help seniors and older adults with non-medical activities of daily living — including personal care and grooming, meal preparation, medication reminders, light housekeeping, companionship, and help with shopping and errands.</p>
+    <p>Care and companionship are available on an hourly or live-in basis. We are experts in 24-hour live-in care, with specialized experience supporting families living with Alzheimer's, dementia, and Parkinson's.</p>
   </div>
 </section>
 
@@ -469,15 +499,19 @@
     <div class="divider"></div>
     <p class="lead">Our Home Care Aides assist with daily needs while providing a fun, supportive companion — every visit shaped around the life and rhythm of the person we care for.</p>
     <ul class="services-list">
-      <li>Companionship</li>
-      <li>Homemaker</li>
-      <li>Personal Care</li>
-      <li>Bathing</li>
-      <li>Dressing</li>
-      <li>Grooming</li>
-      <li>Meal Preparation</li>
+      <li>Personal Care &amp; Grooming</li>
       <li>Medication Reminders</li>
+      <li>Meal Preparation</li>
+      <li>Companionship</li>
+      <li>Light Housekeeping</li>
+      <li>Shopping &amp; Errands</li>
     </ul>
+
+    <div class="specialized-care">
+      <span class="specialized-eyebrow">Specialized Care</span>
+      <h3>Alzheimer's, Dementia &amp; Parkinson's</h3>
+      <p>Patient, knowledgeable support for families navigating memory loss and movement-related conditions — with the routine, reassurance, and gentle attention these conditions ask for.</p>
+    </div>
   </div>
 </section>
 
